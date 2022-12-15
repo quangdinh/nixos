@@ -7,15 +7,28 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      /etc/nixos/hardware-configuration.nix
+      ./hardware-configuration.nix
     ];
+
+  # Hostname
+  networking.hostName = "Carbon";
+
+  # Luks
+  boot.initrd.availableKernelModules = [ 
+    "aesni_intel"
+    "cryptd"
+  ];
+  boot.initrd.luks.devices = {
+    cryptlvm = {
+      device = "";
+      preLVM = true;
+    }
+  }
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
-
-  networking.hostName = "Carbon"; # Define your hostname.
 
   # ZSH
   programs.zsh.enable = true;
@@ -139,6 +152,7 @@
     description = "Quang Dinh Le";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     home = "/home/qdtc";
+    hashedPassword = "$6$43helWNzfEuDYcJ5$Sa2RTU0A1itX.MQWjj5PwSM.rMtrq6juENhiSKAgJl3kyUYxVWRLN9WkTJtFENJh8I9l26RchKk8H7PRwvLjG/";
   };
 
   # Alias for nvim

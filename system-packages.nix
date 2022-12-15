@@ -63,4 +63,6 @@ pkgs: with pkgs; [
   # Theming
   kora-icon-theme
 
+  # Slack
+  slack
 ]
