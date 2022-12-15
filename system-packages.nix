@@ -57,6 +57,7 @@ pkgs: with pkgs; [
 
   # Gnome Shell
   gnomeExtensions.pop-shell
+  gnomeExtensions.vertical-overview
 
   # Theming
   kora-icon-theme
