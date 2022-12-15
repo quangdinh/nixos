@@ -6,10 +6,7 @@ pkgs: with pkgs; [
   bat
   procs
   exa
-
-  # Yubikey
-  opensc
-  ccid
+  zoxide
 
   # Wayland
   wl-clipboard

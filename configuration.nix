@@ -20,10 +20,10 @@
   ];
   boot.initrd.luks.devices = {
     cryptlvm = {
-      device = "";
+      device = "/dev/disk/by-partlabel/cryptlvm";
       preLVM = true;
-    }
-  }
+    };
+  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -38,6 +38,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Yubikey
+  services.yubikey-agent.enable = true;
+  services.pcscd.enable = true;
   # Set your time zone.
   time.timeZone = "Europe/Amsterdam";
 
@@ -155,15 +158,10 @@
     hashedPassword = "$6$43helWNzfEuDYcJ5$Sa2RTU0A1itX.MQWjj5PwSM.rMtrq6juENhiSKAgJl3kyUYxVWRLN9WkTJtFENJh8I9l26RchKk8H7PRwvLjG/";
   };
 
-  # Alias for nvim
-  environment.shellAliases = {
-    vim = "nvim";
-  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = import ./system-packages.nix pkgs;
-
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
