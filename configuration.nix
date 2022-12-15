@@ -25,6 +25,17 @@
     };
   };
 
+  xdg = {
+    portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-wlr
+        xdg-desktop-portal-gtk
+      ];
+      gtkUsePortal = true;
+    };
+  };
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.configurationLimit = 3;
@@ -145,6 +156,11 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
+
+  environment.sessionVariables = {
+    MOZ_ENABLE_WAYLAND = "1";
+  };
+
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
