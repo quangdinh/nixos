@@ -15,8 +15,7 @@ pkgs: with pkgs; [
   noto-fonts-emoji
 
   # Gnome
-  firefox-wayland
-  xdg-desktop-portal-gnome
+  google-chrome
   kitty
   gnome.geary
   gnome.eog

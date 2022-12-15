@@ -28,11 +28,6 @@
   xdg = {
     portal = {
       enable = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-wlr
-        xdg-desktop-portal-gtk
-      ];
-      gtkUsePortal = true;
     };
   };
 
@@ -53,6 +48,7 @@
   # Yubikey
   services.yubikey-agent.enable = true;
   services.pcscd.enable = true;
+
   # Set your time zone.
   time.timeZone = "Europe/Amsterdam";
 
@@ -155,10 +151,6 @@
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
-  };
-
-  environment.sessionVariables = {
-    MOZ_ENABLE_WAYLAND = "1";
   };
 
 
