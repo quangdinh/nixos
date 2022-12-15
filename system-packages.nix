@@ -63,4 +63,7 @@ pkgs: with pkgs; [
 
   # Slack
   slack
+
+  # Office
+  libreoffice-fresh
 ]
