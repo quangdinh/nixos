@@ -46,7 +46,8 @@ pkgs: with pkgs; [
   yarn
   nodePackages.npm
   obsidian
-  #postman
+  python3
+  postman
 
   # Docker
   docker-compose
