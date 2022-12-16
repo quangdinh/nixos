@@ -11,7 +11,6 @@
     go
     nodejs-18_x
     yarn
-    nodePackages.npm
     obsidian
     python3
     postman

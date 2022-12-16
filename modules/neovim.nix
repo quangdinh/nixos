@@ -3,7 +3,7 @@
   programs.neovim = {
     enable = true;
     withRuby = true;
-    withPython = true;
+    withPython3 = true;
     withNodeJs = true;
     vimAlias = true;
     viAlias = true;
