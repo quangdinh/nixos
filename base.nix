@@ -48,8 +48,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-{ config, pkgs, ... }:
-{
   environment.systemPackages = with pkgs; [
     # System utilities
     yadm
@@ -62,7 +60,6 @@
     exa
     zoxide
   ];
-}
 
   system.stateVersion = "22.11";
 }
