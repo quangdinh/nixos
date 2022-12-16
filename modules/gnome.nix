@@ -53,5 +53,5 @@
 
     # Theming
     kora-icon-theme
-  ]
+  ];
 }

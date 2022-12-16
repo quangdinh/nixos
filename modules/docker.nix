@@ -5,6 +5,6 @@
     enableOnBoot = false;
   };
   environment.systemPackages = [
-      pkgs.docker-compose
-    ];
+    pkgs.docker-compose
+  ];
 }

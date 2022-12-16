@@ -15,5 +15,5 @@
     procs
     exa
     zoxide
-  ]
+  ];
 }
