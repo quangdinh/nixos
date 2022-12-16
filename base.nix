@@ -2,9 +2,10 @@
 {
   imports =
     [
-      /etc/nixos/hardware-configuration.nix
       ./locale.nix
-    ];
+    ]
+    ++ lib.optional (builtins.pathExists ./hardware-configuration.nix) ./hardware-configuration.nix
+    ++ lib.optional (builtins.pathExists /etc/nixos/hardware-configuration.nix) /etc/nixos/hardware-configuration.nix;
 
   # Luks
   boot.initrd = {

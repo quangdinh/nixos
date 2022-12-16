@@ -4,7 +4,9 @@
     enable = true;
     enableOnBoot = false;
   };
-  environment.systemPackages = [
-    pkgs.docker-compose
+  environment.systemPackages = with pkgs; [
+    docker-compose
+    docker-credential-helpers
+    pass
   ];
 }

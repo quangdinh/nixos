@@ -14,7 +14,8 @@
     obsidian
     python3
     postman
-    gnumake
-    gcc
+    zip
+    unzip
+    unrar
   ];
 }
