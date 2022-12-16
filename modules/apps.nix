@@ -7,5 +7,6 @@
     slack
     libreoffice-fresh
     obsidian
+    onedrive
   ];
 }
