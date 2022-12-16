@@ -18,4 +18,4 @@
     gnumake
     gcc
   ];
-};
+}

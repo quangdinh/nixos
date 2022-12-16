@@ -5,4 +5,4 @@
     noto-fonts-extra
     noto-fonts-emoji
   ];
-};
+}

@@ -12,4 +12,4 @@
 
   environment.systemPackages = with pkgs; [
   ];
-};
+}

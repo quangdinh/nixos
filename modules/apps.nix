@@ -7,4 +7,4 @@
       slack
       libreoffice-fresh
     ];
-};
+}
