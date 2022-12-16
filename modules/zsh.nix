@@ -10,10 +10,5 @@
   users.defaultUserShell = pkgs.zsh;
   environment.shells = [ pkgs.zsh ];
   environment.systemPackages = with pkgs; [
-    bottom
-    bat
-    procs
-    exa
-    zoxide
   ];
 }

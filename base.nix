@@ -48,5 +48,21 @@
 
   nixpkgs.config.allowUnfree = true;
 
+{ config, pkgs, ... }:
+{
+  environment.systemPackages = with pkgs; [
+    # System utilities
+    yadm
+    zip
+    unzip
+    unrar
+    bottom
+    bat
+    procs
+    exa
+    zoxide
+  ];
+}
+
   system.stateVersion = "22.11";
 }

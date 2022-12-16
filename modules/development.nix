@@ -2,7 +2,6 @@
 {
   environment.systemPackages = with pkgs; [
     # System utilities
-    yadm
     vscode
     git
     gitui
@@ -11,11 +10,7 @@
     go
     nodejs-18_x
     yarn
-    obsidian
     python3
     postman
-    zip
-    unzip
-    unrar
   ];
 }
