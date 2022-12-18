@@ -12,5 +12,10 @@
     yarn
     python3
     postman
+    gcc
+    gnumake
+    clang
+    zig
+    cl
   ];
 }
