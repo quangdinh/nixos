@@ -17,5 +17,15 @@
   };
 
   environment.systemPackages = with pkgs; [
+    nodePackages.prettier
+    black
+    stylua
+    google-java-format
+    python310
+    python310Packages.flake8
+    python310Packages.pip
+    gcc
+    luajit
+    luarocks
   ];
 }

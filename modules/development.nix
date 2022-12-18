@@ -10,12 +10,8 @@
     go
     nodejs-18_x
     yarn
-    python3
     postman
-    gcc
-    gnumake
-    clang
-    zig
-    cl
+    wget
+    jdk8
   ];
 }
