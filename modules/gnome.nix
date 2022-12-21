@@ -53,5 +53,6 @@
 
     # Theming
     kora-icon-theme
+    flat-remix-gnome
   ];
 }
