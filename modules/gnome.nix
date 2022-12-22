@@ -49,10 +49,14 @@
 
     # Gnome Shell
     gnomeExtensions.pop-shell
-    gnomeExtensions.vertical-overview
+    gnomeExtensions.ddterm
+    gnomeExtensions.espresso
+    gnomeExtensions.appindicator
+    gnomeExtensions.vertical-workspaces
 
     # Theming
     kora-icon-theme
+    phinger-cursors
     flat-remix-gnome
   ];
 }
