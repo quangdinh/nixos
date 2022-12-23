@@ -49,7 +49,6 @@
 
     # Gnome Shell
     gnomeExtensions.pop-shell
-    gnomeExtensions.ddterm
     gnomeExtensions.espresso
     gnomeExtensions.appindicator
     gnomeExtensions.vertical-workspaces
