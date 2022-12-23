@@ -6,7 +6,5 @@
     _1password-gui
     slack
     libreoffice-fresh
-    obsidian
-    onedrive
   ];
 }
