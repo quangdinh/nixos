@@ -11,7 +11,7 @@
     defaultEditor = true;
     configure = {
       customRC = ''
-        if filereadable("~/.config/nvim/init.lua")
+        if filereadable(expand('~/.config/nvim/init.lua'))
           luafile ~/.config/nvim/init.lua
 	endif
       '';
