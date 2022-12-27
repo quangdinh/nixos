@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     # System utilities
     vscode
+    textpieces
     git
     gitui
     delta

@@ -33,7 +33,8 @@
   # Apps
   environment.systemPackages = with pkgs; [
     wl-clipboard
-    kitty
+    albert
+    gnome.gnome-terminal
     gnome.geary
     gnome.eog
     gnome.gnome-calendar
@@ -45,13 +46,13 @@
     gnome.gvfs
     gnome.gnome-tweaks
     gnome.totem
-    rhythmbox
+    gnome-text-editor
+    apostrophe
+    amberol
 
     # Gnome Shell
-    gnomeExtensions.pop-shell
     gnomeExtensions.espresso
     gnomeExtensions.appindicator
-    gnomeExtensions.vertical-workspaces
 
     # Theming
     kora-icon-theme

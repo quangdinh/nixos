@@ -3,6 +3,11 @@
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
+  # Apps
+  environment.systemPackages = with pkgs; [
+    sof-firmware
+  ];
+
   services.pipewire = {
     enable = true;
     alsa.enable = true;
