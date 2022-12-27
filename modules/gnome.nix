@@ -53,6 +53,7 @@
     # Gnome Shell
     gnomeExtensions.espresso
     gnomeExtensions.appindicator
+    gnomeExtensions.dash-to-panel
 
     # Theming
     kora-icon-theme
