@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-partBoot=p1
-partCrypt=p2
+set -e
+
+partBoot="p1"
+partCrypt="p2"
 
 disk=$1
 
