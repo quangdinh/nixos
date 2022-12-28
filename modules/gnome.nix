@@ -58,6 +58,5 @@
     # Theming
     kora-icon-theme
     phinger-cursors
-    flat-remix-gnome
   ];
 }
