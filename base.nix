@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, lib, ... }:
 {
   imports =
     [
@@ -63,5 +63,6 @@
     zoxide
   ];
 
+  nix.settings.auto-optimise-store = true;
   system.stateVersion = "22.11";
 }

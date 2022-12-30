@@ -1,11 +1,13 @@
-#!/usr/bin/env bash
+# Setup wifi
+systemctl start wpa_supplicant.service
+wpa_cli
 
-set -e
-
-partBoot="p1"
-partCrypt="p2"
-
-disk=$1
+# Inside WPA CLI
+add_network
+set_network 0 ssid "ssid"
+set_network 0 psk "password"
+enable_network 0
+quit
 
 # Remove partitions
 sgdisk --zap-all $disk

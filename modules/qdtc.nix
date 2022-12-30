@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 {
   users.users.qdtc = {
     uid = 1000;
