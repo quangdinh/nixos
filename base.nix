@@ -23,7 +23,7 @@
 
   # Bootloader.
   boot.loader = {
-    timeout = 3;
+    timeout = 1;
     systemd-boot = {
       enable = true;
       configurationLimit = 3;
