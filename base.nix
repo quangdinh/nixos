@@ -34,6 +34,7 @@
     };
   };
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.plymouth.enable = true;
 
   # Network
@@ -49,7 +50,6 @@
   documentation.nixos.enable = false;
 
   nixpkgs.config.allowUnfree = true;
-  hardware.enableAllFirmware = true;  
   environment.localBinInPath = true;
 
   environment.systemPackages = with pkgs; [
