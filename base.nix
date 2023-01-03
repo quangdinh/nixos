@@ -34,6 +34,8 @@
     };
   };
 
+  boot.plymouth.enable = true;
+
   # Network
   networking = {
     networkmanager.enable = true;
@@ -47,7 +49,7 @@
   documentation.nixos.enable = false;
 
   nixpkgs.config.allowUnfree = true;
-  
+  hardware.enableAllFirmware = true;  
   environment.localBinInPath = true;
 
   environment.systemPackages = with pkgs; [
